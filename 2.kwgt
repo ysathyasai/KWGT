@@ -1,0 +1,428 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "StackLayerModule",
+      "config_stacking": "VERTICAL_CENTER",
+      "config_margin": 20.0,
+      "config_scale_value": 90.0,
+      "viewgroup_items": [
+        {
+          "internal_type": "StackLayerModule",
+          "config_stacking": "VERTICAL_CENTER",
+          "config_margin": 20.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "StackLayerModule",
+              "config_stacking": "HORIZONTAL_CENTER",
+              "config_margin": 20.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 420.0,
+                      "shape_height": 140.0,
+                      "shape_corners": 30.0,
+                      "paint_color": "#A1FFFFFF",
+                      "fx_shadow_blur": 55.0,
+                      "fx_shadow_direction": 0,
+                      "fx_shadow_distance": 0,
+                      "fx_shadow_color": "#38000000",
+                      "internal_toggles": {
+                        "paint_color": 100
+                      },
+                      "internal_formulas": {
+                        "paint_color": "$ce(gv(c1),alpha,40)$"
+                      },
+                      "internal_globals": {
+                        "paint_color": "c1"
+                      }
+                    },
+                    {
+                      "internal_type": "OverlapLayerModule",
+                      "position_anchor": "CENTERLEFT",
+                      "position_padding_left": 12.0,
+                      "viewgroup_items": [
+                        {
+                          "internal_type": "ShapeModule",
+                          "shape_width": 110.0,
+                          "shape_corners": 25.0,
+                          "fx_gradient": "BITMAP",
+                          "fx_gradient_bitmap": "kfile://org.kustom.provider/bitmaps/IMG6c3d7c14d1f05e54fe89a199a6236152",
+                          "fx_bitmap_filter": "BW",
+                          "fx_bitmap_filter_amount": 75,
+                          "internal_toggles": {
+                            "fx_gradient_bitmap": 100
+                          },
+                          "internal_globals": {
+                            "fx_gradient_bitmap": "userpic"
+                          }
+                        },
+                        {
+                          "internal_type": "ShapeModule",
+                          "shape_type": "CIRCLE",
+                          "paint_color": "#FF19F283",
+                          "position_padding_left": 85.0,
+                          "position_padding_top": 85.0,
+                          "internal_toggles": {
+                            "paint_color": 100
+                          },
+                          "internal_globals": {
+                            "paint_color": "c1"
+                          },
+                          "shape_width": 24.0
+                        },
+                        {
+                          "internal_type": "ShapeModule",
+                          "shape_type": "CIRCLE",
+                          "paint_color": "#FFFF7E32",
+                          "position_padding_left": 85.0,
+                          "position_padding_top": 85.0,
+                          "internal_toggles": {
+                            "paint_color": 0
+                          },
+                          "internal_globals": {
+                            "paint_color": "c1"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "internal_type": "StackLayerModule",
+                      "config_margin": 2.0,
+                      "position_padding_left": 155.0,
+                      "position_anchor": "CENTERLEFT",
+                      "viewgroup_items": [
+                        {
+                          "internal_type": "TextModule",
+                          "internal_toggles": {
+                            "paint_color": 100,
+                            "text_expression": 100
+                          },
+                          "internal_globals": {
+                            "paint_color": "c2",
+                            "text_expression": "username"
+                          },
+                          "text_expression": "Jackie !",
+                          "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Bold.ttf",
+                          "text_size": 25.0
+                        },
+                        {
+                          "internal_type": "TextModule",
+                          "internal_toggles": {
+                            "paint_color": 10,
+                            "text_expression": 100
+                          },
+                          "internal_formulas": {
+                            "paint_color": "$ce(gv(c2),alpha,40)$"
+                          },
+                          "text_expression": "Keepingtocarry@gmail.com",
+                          "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Regular.ttf",
+                          "text_size": 18.0,
+                          "internal_globals": {
+                            "text_expression": "device"
+                          }
+                        },
+                        {
+                          "internal_type": "TextModule",
+                          "internal_toggles": {
+                            "paint_color": 0,
+                            "text_expression": 0
+                          },
+                          "internal_formulas": {
+                            "paint_color": "$ce(gv(c1),alpha,40)$"
+                          },
+                          "text_expression": "$df(h:mm a)$",
+                          "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Bold.ttf",
+                          "text_size": 24.0,
+                          "internal_globals": {
+                            "text_expression": "device"
+                          },
+                          "text_filter": [
+                            "UP"
+                          ],
+                          "position_padding_top": 25.0
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "internal_events": [
+                    {
+                      "type": "SINGLE_TAP",
+                      "action": "LAUNCH_SHORTCUT",
+                      "intent": "intent:#Intent;action\u003dcom.teslacoilsw.launcher.ACTION;launchFlags\u003d0x10000000;component\u003dcom.teslacoilsw.launcher/.NovaShortcutHandler;S.LAUNCHER_ACTION\u003dSCREEN_OFF;S.org.kustom.intent.label\u003dNova%20action;end"
+                    }
+                  ],
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_width": 140.0,
+                      "shape_height": 160.0,
+                      "shape_corners": 30.0,
+                      "paint_color": "#A1FFFFFF",
+                      "fx_shadow_blur": 55.0,
+                      "fx_shadow_direction": 0,
+                      "fx_shadow_distance": 0,
+                      "fx_shadow_color": "#38000000",
+                      "internal_toggles": {
+                        "paint_color": 100
+                      },
+                      "internal_formulas": {
+                        "paint_color": "$ce(gv(c1),alpha,40)$"
+                      },
+                      "internal_globals": {
+                        "paint_color": "c1"
+                      }
+                    },
+                    {
+                      "internal_type": "StackLayerModule",
+                      "config_stacking": "VERTICAL_CENTER",
+                      "viewgroup_items": [
+                        {
+                          "internal_type": "FontIconModule",
+                          "internal_toggles": {
+                            "paint_color": 100
+                          },
+                          "internal_globals": {
+                            "paint_color": "c2"
+                          },
+                          "icon_icon": "power_settings_new",
+                          "icon_size": 40.0
+                        },
+                        {
+                          "internal_type": "TextModule",
+                          "internal_toggles": {
+                            "paint_color": 100
+                          },
+                          "internal_globals": {
+                            "paint_color": "c2"
+                          },
+                          "text_expression": "Turn",
+                          "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Regular.ttf",
+                          "text_size": 18.0,
+                          "position_padding_top": 16.0
+                        },
+                        {
+                          "internal_type": "TextModule",
+                          "text_expression": "Off",
+                          "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Bold.ttf",
+                          "internal_toggles": {
+                            "paint_color": 10
+                          },
+                          "internal_formulas": {
+                            "paint_color": "$ce(gv(c2),alpha,40)$"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "internal_type": "StackLayerModule",
+              "config_stacking": "HORIZONTAL_CENTER",
+              "config_margin": 20.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "OverlapLayerModule",
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "ShapeModule",
+                      "shape_type": "RECT",
+                      "shape_width": 260.0,
+                      "shape_height": 310.0,
+                      "shape_corners": 30.0,
+                      "paint_color": "#A4FFFFFF",
+                      "fx_shadow_blur": 55.0,
+                      "fx_shadow_direction": 0,
+                      "fx_shadow_distance": 0,
+                      "fx_shadow_color": "#38000000",
+                      "internal_toggles": {
+                        "paint_color": 100
+                      },
+                      "internal_formulas": {
+                        "paint_color": "$ce(gv(c1),alpha,20)$"
+                      },
+                      "internal_globals": {
+                        "paint_color": "c1"
+                      }
+                    },
+                    {
+                      "internal_type": "StackLayerModule",
+                      "config_margin": 31.0,
+                      "config_scale_value": 106.0,
+                      "position_anchor": "CENTERLEFT",
+                      "position_padding_left": 25.0,
+                      "viewgroup_items": [
+                        {
+                          "internal_type": "StackLayerModule",
+                          "config_stacking": "HORIZONTAL_CENTER",
+                          "config_margin": 20.0,
+                          "internal_events": [
+                            {
+                              "type": "SINGLE_TAP",
+                              "action": "LAUNCH_ACTIVITY",
+                              "intent": "intent:#Intent;component\u003dcom.android.settings/.wifi.WifiSettings;S.org.kustom.intent.label\u003dSettings;end"
+                            }
+                          ],
+                          "viewgroup_items": [
+                            {
+                              "internal_type": "OverlapLayerModule",
+                              "viewgroup_items": [
+                                {
+                                  "internal_type": "ShapeModule",
+                                  "internal_toggles": {
+                                    "paint_color": 10
+                                  },
+                                  "internal_formulas": {
+                                    "paint_color": "$if(nc(wifi)\u003dCONNECTED,#FF4773FF,ce(gv(c2),alpha,30))$"
+                                  },
+                                  "shape_type": "CIRCLE",
+                                  "shape_width": 60.0,
+                                  "paint_color": "#FF4F8CF8"
+                                },
+                                {
+                                  "internal_type": "FontIconModule",
+                                  "internal_toggles": {
+                                    "paint_color": 10
+                                  },
+                                  "internal_formulas": {
+                                    "paint_color": "$if(nc(wifi)\u003dCONNECTED,#FFFFFFF,ce(gv(c2),alpha,30))$"
+                                  },
+                                  "icon_icon": "wifi",
+                                  "icon_size": 30.0
+                                }
+                              ]
+                            },
+                            {
+                              "internal_type": "StackLayerModule",
+                              "config_margin": 4.0,
+                              "viewgroup_items": [
+                                {
+                                  "internal_type": "TextModule",
+                                  "text_expression": "Wifi",
+                                  "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Bold.ttf",
+                                  "text_size": 18.0,
+                                  "paint_color": "#FF000000",
+                                  "internal_toggles": {
+                                    "paint_color": 100
+                                  },
+                                  "internal_globals": {
+                                    "paint_color": "c2"
+                                  }
+                                },
+                                {
+                                  "internal_type": "TextModule",
+                                  "text_expression": "$nc(wifi)$",
+                                  "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Regular.ttf",
+                                  "text_size": 17.0,
+                                  "paint_color": "#FF000000",
+                                  "internal_toggles": {
+                                    "paint_color": 10
+                                  },
+                                  "internal_formulas": {
+                                    "paint_color": "$ce(gv(c2),alpha,40)$"
+                                  },
+                                  "text_filter": [
+                                    "CAP"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "internal_type": "StackLayerModule",
+                          "config_stacking": "HORIZONTAL_CENTER",
+                          "config_margin": 20.0,
+                          "internal_events": [
+                            {
+                              "type": "SINGLE_TAP",
+                              "action": "LAUNCH_ACTIVITY",
+                              "intent": "intent:#Intent;component\u003dcom.android.settings/.bluetooth.BluetoothSettings;S.org.kustom.intent.label\u003dSettings;end"
+                            }
+                          ],
+                          "viewgroup_items": [
+                            {
+                              "internal_type": "OverlapLayerModule",
+                              "viewgroup_items": [
+                                {
+                                  "internal_type": "ShapeModule",
+                                  "internal_toggles": {
+                                    "paint_color": 10
+                                  },
+                                  "internal_formulas": {
+                                    "paint_color": "$if(nc(bt)\u003d1,#FFFC0A60,ce(gv(c2),alpha,30))$"
+                                  },
+                                  "shape_type": "CIRCLE",
+                                  "shape_width": 60.0,
+                                  "paint_color": "#FF4F8CF8"
+                                },
+                                {
+                                  "internal_type": "FontIconModule",
+                                  "internal_toggles": {
+                                    "paint_color": 10
+                                  },
+                                  "internal_formulas": {
+                                    "paint_color": "$if(nc(bt)\u003d1,#FFFFFFF,ce(gv(c2),alpha,30))$"
+                                  },
+                                  "icon_icon": "bluetooth",
+                                  "icon_size": 30.0
+                                }
+                              ]
+                            },
+                            {
+                              "internal_type": "StackLayerModule",
+                              "config_margin": 4.0,
+                              "viewgroup_items": [
+                                {
+                                  "internal_type": "TextModule",
+                                  "text_expression": "Bluetooth",
+                                  "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Bold.ttf",
+                                  "text_size": 18.0,
+                                  "paint_color": "#FF000000",
+                                  "internal_toggles": {
+                                    "paint_color": 100
+                                  },
+                                  "internal_globals": {
+                                    "paint_color": "c2"
+                                  }
+                                },
+                                {
+                                  "internal_type": "TextModule",
+                                  "text_expression": "$if(nc(bt)\u003d1,Enabled,Disbaled)$",
+                                  "text_family": "kfile://org.kustom.provider/fonts/Product_Sans_Regular.ttf",
+                                  "text_size": 17.0,
+                                  "paint_color": "#FF000000",
+                                  "internal_toggles": {
+                                    "paint_color": 10
+                                  },
+                                  "internal_formulas": {
+                                    "paint_color": "$ce(gv(c2),alpha,40)$"
+                                  },
+                                  "text_filter": [
+                                    "CAP"
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "internal_type": "StackLayerModule",
+                          "config_stacking": "HORIZONTAL_CENTER",
+                          "config_margin": 20.0,
+                          "internal_events": [
+                            {
+                              "type": "SINGLE_TAP",
+                              "action": "LAUNCH_SHORTCUT",
+                              "intent": "intent:#Intent;action\u003dcom.teslacoilsw.launcher.ACTION;l
