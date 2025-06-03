@@ -1,0 +1,231 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "viewgroup_items": [
+        {
+          "internal_toggles": {
+            "paint_color": 0
+          },
+          "internal_globals": {
+            "paint_color": "c1"
+          },
+          "internal_type": "ShapeModule",
+          "shape_type": "RECT",
+          "shape_width": 610.0,
+          "shape_height": 520.0,
+          "shape_corners": 40.0,
+          "paint_color": "#00151517"
+        },
+        {
+          "internal_type": "TextModule",
+          "text_size": 380.0,
+          "text_family": "kfile://org.kustom.provider/fonts/helvetica-compressed-5871d14b6903a.ttf",
+          "text_expression": "$df(dd,a1d)$",
+          "paint_color": "#15FFFFFF",
+          "position_padding_top": 25.0,
+          "internal_toggles": {
+            "paint_color": 10
+          },
+          "internal_formulas": {
+            "paint_color": "$ce(gv(c2),alpha,20)$"
+          },
+          "position_padding_bottom": 200.0,
+          "position_anchor": "TOPRIGHT"
+        },
+        {
+          "internal_type": "StackLayerModule",
+          "position_padding_bottom": 105.0,
+          "position_anchor": "CENTERLEFT",
+          "position_padding_left": 5.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "TextModule",
+              "text_size": 60.0,
+              "text_family": "kfile://org.kustom.provider/fonts/helvetica-compressed-5871d14b6903a.ttf",
+              "text_expression": "$df(MMMM)$",
+              "internal_toggles": {
+                "paint_color": 100
+              },
+              "internal_globals": {
+                "paint_color": "c2"
+              }
+            },
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 160.0,
+              "shape_height": 1.0,
+              "internal_toggles": {
+                "paint_color": 100
+              },
+              "internal_globals": {
+                "paint_color": "c2"
+              }
+            },
+            {
+              "internal_type": "StackLayerModule",
+              "position_padding_top": 50.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "StackLayerModule",
+                  "config_stacking": "HORIZONTAL_CENTER",
+                  "config_margin": 10.0,
+                  "viewgroup_items": [
+                    {
+                      "internal_type": "TextModule",
+                      "text_size": 60.0,
+                      "text_family": "kfile://org.kustom.provider/fonts/FontsFree-Net-SFProDisplay-Light.ttf",
+                      "text_expression": "$wi(temp)$°",
+                      "internal_toggles": {
+                        "paint_color": 100
+                      },
+                      "internal_globals": {
+                        "paint_color": "c2"
+                      }
+                    },
+                    {
+                      "internal_type": "KomponentModule",
+                      "internal_title": "3D weather XT",
+                      "globals_list": {
+                        "icon": {
+                          "index": 1,
+                          "type": "LIST",
+                          "title": "Icon",
+                          "global_formula": "",
+                          "entries": "\"$wi(icon)$\"##Current,\"$wf(icon, 0)$\"##Today Forecast,\"$wf(icon, 1)$\"##Tomorrow Forecast,\"$wf(icon, 2)$\"##2 Days Forecast,\"$wf(icon, 3)$\"##3 Days Forecast,\"$wf(icon, 4)$\"##4 Days Forecast,\"$wf(icon, 5)$\"##5 Days Forecast,\"$wf(icon, 6)$\"##6 Days Forecast,\"$wf(icon, 7)$\"##7 Days Forecast,\"$wf(icon, 8)$\"##8 Days Forecast,\"$wf(icon, 9)$\"##9 Days Forecast,\"$wf(icon,0,1)$\"##1 hour,\"$wf(icon, 0,2)$\"##2 hour,\"$wf(icon, 0,3)$\"##3 hour,\"$wf(icon, 0,4)$\"##4 hour,\"$wf(icon, 0,5)$\"##5 hour,\"$wf(icon, 0,6)$\"##6 hour,\"$wf(icon, 0,7)$\"##7 hour,\"$wf(icon, 0,8)$\"##8 hour,\"$wf(icon, 0,9)$\"##9 hour,\"$wf(icon, 0,10)$\"##10 hour,\"$wf(icon, 0,11)$\"##11 hour, “$wf(icon, 0,12)”##12 hour",
+                          "value": "$wi(icon)$"
+                        },
+                        "nightico": {
+                          "index": 2,
+                          "type": "SWITCH",
+                          "title": "NightIco",
+                          "value": 1
+                        },
+                        "scale": {
+                          "index": 3,
+                          "type": "NUMBER",
+                          "title": "Scale",
+                          "min": 20,
+                          "max": 1000,
+                          "value": 100.0
+                        }
+                      },
+                      "internal_description": "Day/Night Weather",
+                      "internal_author_email": "keepingtocarry@gmail.com",
+                      "internal_author_name": "Raj Arya",
+                      "internal_toggles": {
+                        "config_scale_value": 10
+                      },
+                      "internal_formulas": {
+                        "config_scale_value": "100"
+                      },
+                      "internal_readonly": "03cgfhPABVNqNE9T1wb0B3YgSlmem0afQKo7Fmdcz8Rz5-6psXf5zynVhigNSar8jT5KhNJRuTMewBvrmZq0k3VOczX2m_Ay8QX7V0pyQqf2s9EeiVxZG9xTxbdI8uiOplfRY-G9w7AFyPe4OX-NWRdsKdb6UofCHqrgtNAs_iySljcwnCBRt_PgqWSCaOf2xS8VkNbQTevXsPIOtZFkONl9BtmMPWiQGrxP9YuzElpwTzIgiSmcCJMD9M5H2RVkqNE7M4MafkWvnE4ZLsNpjtOKwgU946XKelVMQdvUuQkUn52x9LcJamdx0S--jc1idU5zNfab8DLxBftXSnJCpxXYKBSQqBYGJ9ej-dK44fQiObSxLTSvJjuzLU9UD4NxP6vciCXLvd9nNFsDnZ3uqCfXo_nSuOH0w675GDcVx_mBSUC0ua5_rgJBw-A9g1wkT1_irAB6_3SxhV7WVlSSKRTRK58wDjf-W5LJkhrW_nLtGrKCIzavsSohDt8WVAQ2XHxMifDjuqntOfzizeuOThWRwobR--x9zBeck31L_HHhdATa5gJpgizky1bvFkbmKlBa6c14GvZslJnAgAnYuC8vkaBs63XFm4siw0oJi0Fc6NBm5-0UJM-XJIp2pMPRajRPU9cG9AcvYovTc0cfiFKkVpnsenNeO7MtT1QPg3HI0359Fkx4Ikzr2zV3ETp3knOcqLOva5YXbCnW-lKHwkhva8llgcFLDZWZ26WN_53VkzC9M2DHFBLQV0I9n2XpKdWGKA1JqvwMXSaTCo8RPQ2Vmduljf-d1ZMwvTNgxxR8TGglf5q32DOuufPv9K9KG4-USGx5s7WRP-0Smnwu1f7h9o_ir1im-hHEafei1RAGRdjgNtzqMYWEp-R3xINqyyvNDdhDUAhm38NITttOypZFXfRRUi3GM7qdMaHq7FH0wgULoRB3_DkvHVqOT_cTIWj58SFC4Tjd8JeevxUlZwAWdxDjPvxQAXMxuFzFEgWBrvCuOXGHntVhtIbLbI3_F2wp1vpSh8JZgCeSxRkpXKBGsQldjjIZc-fuqbF3-c8p1YYoDUmq_I0-SoTSUbkzSKlA2BqRjid1TnM19pvwMvEF-1dKckKnFdgoFJCoFgYn16P50rjh9CI5tLEtNK8mO7MtT1QPg3E_q9yIJcu932c0WwOdne6oJ9ej-dK44fTDrvkYNxXH-YFJQLS5rn-uYV4IGs_fMYiRP-0Smnwu1VAGz9hfwO1l-hHEafei1RBz9GmrGhEKNIWEp-R3xINqyyvNDdhDUAhm38NITttOypZFXfRRUi3GM7qdMaHq7FH0wgULoRB3_DkvHVqOT_cTIWj58SFC4TiOXVgEsXhRuQ3jQi_HSPZmNWxzBy8e4kWiIhw4pjISSbKsjkDEtvaLF2wp1vpSh8JZgCeSxRkpXKBGsQldjjIZc-fuqbF3-c8p1YYoDUmq_I0-SoTSUbkzwK8PBwCiPY_CWF59I2xo3F3stjLWkGlRK27YhD_YGfr4n4YUjU8PSRLFC5MyloTG76OAp06PziaeeE8d8RLWg0iQSXXrVDA4-J-GFI1PD0liNtCwwXzh4xMGza_1xMFn8s__xDDjj9RPX-KsAHr_dGtIqE3P1H0CArMHj2pfitG26EPvcmF2r-0asoIjNq-xKiEO3xZUBDZcfEyJ8OO6qe05_OLN645OFZHChtH77H3MF5yTfUv8ceF0BNrmAmmCLOTLVu8WRubL5fq2ZA1SmiPUS9uj8q4oRiFKD28xwok8slBDTP4Ov8Fej_PPqnUvz5ckinakw9FqNE9T1wb0By9ii9NzRx-IUqRWmex6c147sy1PVA-DccjTfn0WTHgi7IRQvNh-Rbr837Yqmt6c03pVTEHb1LkJW_OWvtQZ7WQmSz_7rhhpkVTS0758l3kSOUNhqWu8IF6qj6tyMQu6-tW4iL7ADZR8Jks_-64YaZFU0tO-fJd5Eu51-R18qDuObdbhOuDcLStEWepZUsLtGZSXgDdRI4a2WsZiAFVX6CRVYWxq8Vytf3yyiUXFfWmP5f96-xJo7Hb4n4YUjU8PSRTdI3DsPG_3CrA0VpFconU7khZhb63IGO4HPw9K3mClsmWDYdkl0SvyLQgtRdNrUfvoFC2IYhIk_VZjZ0A8j-A6ek1Ckvy46bg9E33IvccZdDxfsDXqAQ1MnqmpSbGeyIZ0XMnN8zXvsBvF0rQbg_0b15P93myPM1poWrnabZSrrn7_yZNCsKfanv1JoeiSdzuzLU9UD4Nx7ItAFbw4gmUsvf689vADCh2rC-ZJ0evicv0fzE1lRocXbCnW-lKHwlVgMZAhSUTv96kp1FLeqfAdqwvmSdHr4swByPo_W15FOrZ5ClWh5-YobKFp6-lztZE_7RKafC7V_uH2j-KvWKb6EcRp96LVEAZF2OA23OoxhYSn5HfEg2rLK80N2ENQCGbfw0hO207KlkVd9FFSLcYzup0xoersUfTCBQuhEHf8OS8dWo5P9xMhaPnxIULhOIcl3CMKSlvxPJxbU83RNgZ1V8ojbeLPSKidKIB35X8N4mq7c-mexBEXbCnW-lKHwlmAJ5LFGSlcoEaxCV2OMhlz5-6psXf5zynVhigNSar8jT5KhNJRuTMHWs2_Q--CkY4QL7IL6pfiO7MtT1QPg3Hsi0AVvDiCZSy9_rz28AMKHasL5knR6-Jy_R_MTWVGhxdsKdb6UofCVWAxkCFJRO_3qSnUUt6p8B2rC-ZJ0evizAHI-j9bXkU6tnkKVaHn5qIH-8BnJ-1MhIvG4HU4CuC2sCQ4hI3MsO6aW-sFsL3C4iitZmosKlrKicZx9zIu9Jv8nKFw4YUEj8I5whBRdv5O3-Q_7dvnUiUF03WCb2MfA6tiLt_jd1XJI5kCDLkaS1vOONZ-jQqvDmVpWSPLRm1HuMNpSWCN4uZHbhCNg1bW5orCD7meIaHkm3kRQwcMVlFIswUWrHrJa5uJJ8BLCZmB_shTNJIuvnQ13rdBYhT4F2wp1vpSh8LU-V6LXp97Pp4HbOj3kR_rI8PfmWdQ1HXCWF59I2xo3F3stjLWkGlRK27YhD_YGfr4n4YUjU8PSRLFC5MyloTG76OAp06PziaeeE8d8RLWg0iQSXXrVDA4-J-GFI1PD0liNtCwwXzh4xMGza_1xMFniBl85U2JyqwToK7aJOb_IpSXgDdRI4a2q81AXFNZ4b1VYWxq8Vytf-j-bvluwjv65f96-xJo7Hb4n4YUjU8PSRTdI3DsPG_3CrA0VpFconU7khZhb63IGO4HPw9K3mClsmWDYdkl0SvyLQgtRdNrUcLp9FzK3U5bzOcyfyTNwitmKDIazSylmn_v6U981xm_dDxfsDXqAQ1MnqmpSbGeyIZ0XMnN8zXvsBvF0rQbg_0b15P93myPM1poWrnabZSrfLAL1cYt45Wk0LQseYB_Ww-Yfrx7l7EuF2wp1vpSh8JIb2vJZYHBSw2Vmduljf-d1ZMwvTNgxxQS0FdCPZ9l6SnVhigNSar8DF0mkwqPET0NlZnbpY3_ndWTML0zYMcUfExoJX-at9gzrrnz7_SvSsZmbQQ1r3QHT1_irAB6_3SxhV7WVlSSKRTRK58wDjf-W5LJkhrW_nLtGrKCIzavsSohDt8WVAQ2XHxMifDjuqntOfzizeuOThWRwobR--x9zBeck31L_HHhdATa5gJpgizky1bvFkbmAngdSJiX-1bGjXeHpHl8XRY0nfUZWHTbkQ5cKBkkeaGG3dyU7DgyQ8-XJIp2pMPRajRPU9cG9AcvYovTc0cfiFKkVpnsenNeO7MtT1QPg3HI0359Fkx4IpmKTiv27hCqqSxYlqlCiUmSc5yos69rlhdsKdb6UofCSG9ryWWBwUsNlZnbpY3_ndWTML0zYMcUEtBXQj2fZekp1YYoDUmq_AxdJpMKjxE9DZWZ26WN_53VkzC9M2DHFHxMaCV_mrfYM6658-_0r0rGZm0ENa90B09f4qwAev90a0ioTc_UfQICswePal-K0bboQ-9yYXav7RqygiM2r7EqIQ7fFlQENlx8TInw47qp7Tn84s3rjk4VkcKG0fvsfcwXnJN9S_xx4XQE2uYCaYIs5MtW7xZG5tY9Y04m2He4SxhJvL5NCKojEEJRnmpC3jyVVjQoTqgAdPBfdFEZl7rPlySKdqTD0Wo0T1PXBvQHL2KL03NHH4hSpFaZ7HpzXjuzLU9UD4NxyNN-fRZMeCKuyXANbz15tqksWJapQolJgP9SfZvWRiWTA_TOR9kVZMMmlrOLf53QELnPLafHwvnQ1T9hn11HdQOOxBwXL0PVOG2NKfIgt5LmSMh91cbBnRC5zy2nx8L50NU_YZ9dR3UjiMsWK8cbPlTFlnt5W2wyGzOO3cE_xOqRP-0Smnwu1VAGz9hfwO1l-hHEafei1RBz9GmrGhEKNIWEp-R3xINqyyvNDdhDUAhm38NITttOypZFXfRRUi3GM7qdMaHq7FH0wgULoRB3_DkvHVqOT_cTIWj58SFC4TiMk61jtWAtuZZWYYnRhXw0FgcmSH_S4qt7TFdhAzhNQ-eyutpeCQSmF2wp1vpSh8JZgCeSxRkpXKBGsQldjjIZc-fuqbF3-c8p1YYoDUmq_I0-SoTSUbkzLEPU3yk0N4KMjvDEWc6MQd7-pUQhT360kwP0zkfZFWTDJpazi3-d0BC5zy2nx8L50NU_YZ9dR3UDjsQcFy9D1ThtjSnyILeS5kjIfdXGwZ0Quc8tp8fC-dDVP2GfXUd1I4jLFivHGz5UxZZ7eVtsMhszjt3BP8TqkT_tEpp8LtX-4faP4q9YpvoRxGn3otUQBkXY4Dbc6jGFhKfkd8SDassrzQ3YQ1AIZt_DSE7bTsqWRV30UVItxjO6nTGh6uxR9MIFC6EQd_w5Lx1ajk_3EyFo-fEhQuE4jJOtY7VgLbmWVmGJ0YV8NBYHJkh_0uKre0xXYQM4TUNrMfQyl5Pa15QS7bRItMtgue9GRO0QMnGc46lrlXTwPvifhhSNTw9Jn62Aqq5YVgvxYvDDK3ZEw2R3aNqI4em125xsiXHhJ7MquZ4hgZCEsitqdoa8NClgdU5zNfab8DLIan9gspo-ssKyKuIjXhWKdU5zNfab8DLxBftXSnJCpxXYKBSQqBYGJ9ej-dK44fQiObSxLTSvJjuzLU9UD4NxP6vciCXLvd9nNFsDnZ3uqCfXo_nSuOH0w675GDcVx_mBSUC0ua5_rs5Xk8NIH068hYSn5HfEg2rLK80N2ENQCGbfw0hO207KlkVd9FFSLcYzup0xoersUfTCBQuhEHf8OS8dWo5P9xMhaPnxIULhOEdMLlYiroF102slp0avZLjTQoEWDQvTYx__0t7MnQH6YmvWualf9eIXbCnW-lKHwlmAJ5LFGSlcoEaxCV2OMhlz5-6psXf5zynVhigNSar8jT5KhNJRuTN9pU_QJ4w0J4D_Un2b1kYlkwP0zkfZFWTDJpazi3-d0BC5zy2nx8L50NU_YZ9dR3UDjsQcFy9D1ThtjSnyILeS5kjIfdXGwZ0Quc8tp8fC-dDVP2GfXUd1I4jLFivHGz7T_O66BxijhTHowHEBnblHahJZ2JimfAgirQcCJ3to0heBeP3AeIj7jNorUvT4vhe-qWzJ9sZ_310889Z1y_3Z4mwkI5O-TabL3GEHmZeS5Yml8bCKBVss27N9LnlDSM9Vxa-XkSBMy8qCx2WGDQNnKSWb8N_7hHuaDDhcKZ6BueEb5HW7mtsc_Rxaqw9U86dpzRefTu1wFinVhigNSar8IcI3ixgLzm17c_iyvyAAF10RGSiE6iWDkwP0zkfZFWTYXHQZiwx-t9gIH38grmdJUxruaxvCVqYp1YYoDUmq_Bt6iFITCZetZAjUp6xpWWoi6V0SVvgLphSrpFhqGvCXkwP0zkfZFWRIuDbleXn_gGQI1KesaVlqIuldElb4C6ZJODL29-hhjHidNo5S-ieWd5GAo3KmD-KRP-0Smnwu1f7h9o_ir1im-hHEafei1RAGRdjgNtzqMYWEp-R3xINqyyvNDdhDUAhm38NITttOypZFXfRRUi3GM7qdMaHq7FH0wgULoRB3_DkvHVqOT_cTIWj58SFC4TglpSIXoLQ4SnP1ZNq7e9z0RqsoHaXlrl2GTxT4IOG9ZvX6jtWa3xWmF2wp1vpSh8JZgCeSxRkpXKBGsQldjjIZc-fuqbF3-c8p1YYoDUmq_I0-SoTSUbkzf_DUsOgYXzJpmed4ol6vDF3stjLWkGlRK27YhD_YGfr4n4YUjU8PSRLFC5MyloTG76OAp06PziaeeE8d8RLWg0iQSXXrVDA4-J-GFI1PD0liNtCwwXzh4xMGza_1xMFn9jNlxOCbY3VDGJ3bwTSMupSXgDdRI4a2WsZiAFVX6CRVYWxq8Vytf3yyiUXFfWmP5f96-xJo7Hb4n4YUjU8PSRTdI3DsPG_3CrA0VpFconU7khZhb63IGO4HPw9K3mClsmWDYdkl0SvyLQgtRdNrUW9p3nXlKineW_6l894KJ-KGwjFiTwDtp9cCKyNzuf5pdDxfsDXqAQ1MnqmpSbGeyIZ0XMnN8zXvsBvF0rQbg_0b15P93myPM1poWrnabZSr9I9ennRtCLzAPKotEy0pf3VOczX2m_Ay8QX7V0pyQqcV2CgUkKgWBifXo_nSuOH0Ijm0sS00ryY7sy1PVA-DcT-r3Igly73fZzRbA52d7qgn16P50rjh9MOu-Rg3Fcf5gUlAtLmuf64orAz6pi7-nk9f4qwAev90a0ioTc_UfQICswePal-K0bboQ-9yYXav7RqygiM2r7EqIQ7fFlQENlx8TInw47qp7Tn84s3rjk4VkcKG0fvsfcwXnJN9S_xx4XQE2uYCaYIs5MtW7xZG5keKLKGxaGAutLOw6qznhkQTU3IeZZQX4nI40jn5TTrBjCYF2Bh5UEPPlySKdqTD0Wo0T1PXBvQHL2KL03NHH4hSpFaZ7HpzXjuzLU9UD4NxyNN-fRZMeCINCe231LXUEvzftiqa3pzTelVMQdvUuQlb85a-1BntZCZLP_uuGGmRVNLTvnyXeRI5Q2Gpa7wgXqqPq3IxC7r61biIvsANlHwmSz_7rhhpkVTS0758l3kS7nX5HXyoO443uOc93QD3khOgrtok5v8ilJeAN1EjhrZaxmIAVVfoJFVhbGrxXK1_fLKJRcV9aY_l_3r7EmjsdvifhhSNTw9JFN0jcOw8b_cKsDRWkVyidTuSFmFvrcgY7gc_D0reYKWyZYNh2SXRK_ItCC1F02tRRVGqjAEoPqj7FOog3VO_nXPpRHtMY9HWOhFl8xM0_VR0PF-wNeoBDUyeqalJsZ7IhnRcyc3zNe-wG8XStBuD_RvXk_3ebI8zWmhaudptlKtMcguRny-H9LpvEZvjYz70O7MtT1QPg3Hsi0AVvDiCZSy9_rz28AMKHasL5knR6-Jy_R_MTWVGhxdsKdb6UofCVWAxkCFJRO_3qSnUUt6p8B2rC-ZJ0evizAHI-j9bXkU6tnkKVaHn5vTUTSx7X-JkkT_tEpp8LtX-4faP4q9YpvoRxGn3otUQBkXY4Dbc6jGFhKfkd8SDassrzQ3YQ1AIZt_DSE7bTsqWRV30UVItxjO6nTGh6uxR9MIFC6EQd_w5Lx1ajk_3EyFo-fEhQuE4r9VO6b50KFuuhhNVrXPcBfV_sqI58nUsQDSt1tDMpkcztclFjVFsHRdsKdb6UofCWYAnksUZKVygRrEJXY4yGXPn7qmxd_nPKdWGKA1JqvyNPkqE0lG5MxMww6IqEiPbWewp_0FeFyj837Yqmt6c03pVTEHb1LkJW_OWvtQZ7WQmSz_7rhhpkVTS0758l3kSOUNhqWu8IF6qj6tyMQu6-tW4iL7ADZR8Jks_-64YaZFU0tO-fJd5Eu51-R18qDuOLvaXQaKB95Qx6MBxAZ25R2oSWdiYpnwIIq0HAid7aNIXgXj9wHiI-4zaK1L0-L4XvqlsyfbGf99dPPPWdcv92eJsJCOTvk2my9xhB5mXkuWJpfGwigVbLNuzfS55Q0jPVcWvl5EgTMvKgsdlhg0DZ6uYHvWFtmLJvrc7uHZUO_5D2TG1mDL31KedADui8kDltfhQREaXPY0p1YYoDUmq_CHCN4sYC85te3P4sr8gABddERkohOolg5MD9M5H2RVk2Fx0GYsMfrdLBwJBZLXEEs3CR80HOZGs3v6lRCFPfrSTA_TOR9kVZMMmlrOLf53QELnPLafHwvnQ1T9hn11HdQOOxBwXL0PVOG2NKfIgt5LmSMh91cbBnRC5zy2nx8L50NU_YZ9dR3UjiMsWK8cbPnn4rqFRBLVVd5GAo3KmD-KRP-0Smnwu1f7h9o_ir1im-hHEafei1RAGRdjgNtzqMYWEp-R3xINqyyvNDdhDUAhm38NITttOypZFXfRRUi3GM7qdMaHq7FH0wgULoRB3_DkvHVqOT_cTIWj58SFC4TizIM4wB1SJZxwExOx_Q7QkEoqMZGgS6qHH6afveRboG_2LhEQ95x9mKdWGKA1JqvwhwjeLGAvObXtz-LK_IAAXXREZKITqJYOTA_TOR9kVZNhcdBmLDH63GROnVdQ93lEnHK_m5UfXm5MD9M5H2RVkwyaWs4t_ndAQuc8tp8fC-dDVP2GfXUd1A47EHBcvQ9U4bY0p8iC3kuZIyH3VxsGdELnPLafHwvnQ1T9hn11HdSOIyxYrxxs-efiuoVEEtVWHAUnNkhvwjJAxNUAEPG7TX9tq6KBbSED6MIQcWFWLllCZa6afMn1odbEM5SO5bdQGWOaWHyen20ldG3GRTRwm2k99-XoFw7iXGGPG85Cc5elRU9yBWp97XwJGHrheq5iJqWyYmpHgX26_E1oE0QamkwP0zkfZFWSo0Tszgxp-Ra-cThkuw2mO04rCBT3jpcp6VUxB29S5CVZvZwXAsjt7w8KGh_7RgpkXbCnW-lKHwkhva8llgcFLDZWZ26WN_53VkzC9M2DHFBLQV0I9n2XpKdWGKA1JqvwMXSaTCo8RPQ2Vmduljf-d1ZMwvTNgxxR8TGglf5q32DOuufPv9K9KeAGDgDy0zKjKicZx9zIu9Jv8nKFw4YUEj8I5whBRdv5O3-Q_7dvnUiUF03WCb2MfA6tiLt_jd1XJI5kCDLkaS1vOONZ-jQqvO208ed-8GmuA6yasMET2Z1ZCtrsGbPjc7qTkHczuQvu6l-HXRAb3uFFIswUWrHrJa5uJJ8BLCZmB_shTNJIuvnQ13rdBYhT4F2wp1vpSh8LU-V6LXp97PpBhkTGFFXjX_N-2KprenNN6VUxB29S5CVvzlr7UGe1kJks_-64YaZFU0tO-fJd5EjlDYalrvCBeqo-rcjELuvrVuIi-wA2UfCZLP_uuGGmRVNLTvnyXeRLudfkdfKg7jkhQbcCPVROCrxrAzb4Qg9gSc2XnuiPDKocFNyxKcNqkbx4rAgezfVw__ToeKYmtDKTpDlP5Uq-ttsjnacUfCozA5ZjIi00DmdpeHXtAuHEyIsGswdxkYrMLOUuYwTnOOTQ3oFiIanv15esVTYOVNrlEUbnAw5vDdxwym9z0juosy1dwaJ-Naar14jxQJ6rgylRnlwbjR7SmelVMQdvUuQkolMWo6bAHP6aLvqHjZRnouWwWyK5UlqjxVbPw9EUrPaw67zUp775liU9m9BR_nSPR1UkPjsG3B1lG9VvXqxRj0tASRdbR-nAytmm2pn4tM0WYWEMoMJiMcOcEwLdgDnmWtm9_eNa0ttTjH9Tsa3YoMrZptqZ-LTPrSSmbDjEgmHXfehCcQBBocArCrP50g1_w8JjbT1IPcEZW9dOLM_KIKhrQFRaknDw-qpSWGMwc4ExV_n6wRDNEC2rET_NyX1i9zl654Ho-vMxAxtTdt5jfMB9PUxODuJpszMcNsnGSrMhgHiaekzAGBKATTn00CDZIAlqZE7v4FaqJBvnEnt_Dh7Eeo78_SUgMNmgf0_yQlIVfO2aOFll45sJK5ofXy7k\u003d"
+                    }
+                  ]
+                },
+                {
+                  "internal_type": "TextModule",
+                  "text_size": 18.0,
+                  "text_filter": [
+                    "CAP"
+                  ],
+                  "text_family": "kfile://org.kustom.provider/fonts/FontsFree-Net-SFProDisplay-Light.ttf",
+                  "text_expression": "$wi(cond)$",
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "c2"
+                  }
+                },
+                {
+                  "internal_type": "TextModule",
+                  "text_size": 18.0,
+                  "text_filter": [
+                    "CAP"
+                  ],
+                  "text_family": "kfile://org.kustom.provider/fonts/FontsFree-Net-SFProDisplay-Light.ttf",
+                  "text_expression": "H. $wf(max, 0)$° L. $wf(min, 0)$°",
+                  "position_padding_top": 4.0,
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "c2"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "internal_type": "StackLayerModule",
+          "config_stacking": "VERTICAL_RIGHT",
+          "position_anchor": "CENTERRIGHT",
+          "config_margin": 20.0,
+          "position_padding_right": 5.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "StackLayerModule",
+              "config_stacking": "HORIZONTAL_CENTER",
+              "config_margin": 20.0,
+              "viewgroup_items": [
+                {
+                  "internal_type": "TextModule",
+                  "text_size": 18.0,
+                  "text_filter": [
+                    "CAP"
+                  ],
+                  "text_family": "kfile://org.kustom.provider/fonts/FontsFree-Net-SFProDisplay-Light.ttf",
+                  "text_expression": "$df(EEE,a1d)$ - H. $wf(max, 1)$° L. $wf(min, 1)$°",
+                  "position_padding_top": 4.0,
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "c2"
+                  }
+                },
+                {
+                  "internal_type": "KomponentModule",
+                  "internal_title": "3D weather XT",
+                  "globals_list": {
+                    "icon": {
+                      "index": 1,
+                      "type": "LIST",
+                      "title": "Icon",
+                      "global_formula": "",
+                      "entries": "\"$wi(icon)$\"##Current,\"$wf(icon, 0)$\"##Today Forecast,\"$wf(icon, 1)$\"##Tomorrow Forecast,\"$wf(icon, 2)$\"##2 Days Forecast,\"$wf(icon, 3)$\"##3 Days Forecast,\"$wf(icon, 4)$\"##4 Days Forecast,\"$wf(icon, 5)$\"##5 Days Forecast,\"$wf(icon, 6)$\"##6 Days Forecast,\"$wf(icon, 7)$\"##7 Days Forecast,\"$wf(icon, 8)$\"##8 Days Forecast,\"$wf(icon, 9)$\"##9 Days Forecast,\"$wf(icon,0,1)$\"##1 hour,\"$wf(icon, 0,2)$\"##2 hour,\"$wf(icon, 0,3)$\"##3 hour,\"$wf(icon, 0,4)$\"##4 hour,\"$wf(icon, 0,5)$\"##5 hour,\"$wf(icon, 0,6)$\"##6 hour,\"$wf(icon, 0,7)$\"##7 hour,\"$wf(icon, 0,8)$\"##8 hour,\"$wf(icon, 0,9)$\"##9 hour,\"$wf(icon, 0,10)$\"##10 hour,\"$wf(icon, 0,11)$\"##11 hour, “$wf(icon, 0,12)”##12 hour",
+                      "value": "$wf(icon, 1)$"
+                    },
+                    "nightico": {
+                      "index": 2,
+                      "type": "SWITCH",
+                      "title": "NightIco",
+                      "value": 1
+                    },
+                    "scale": {
+                      "index": 3,
+                      "type": "NUMBER",
+                      "title": "Scale",
+                      "min": 20,
+                      "max": 1000,
+                      "value": 50.0
+                    }
+                  },
+                  "internal_description": "Day/Night Weather",
+                  "internal_author_email": "keepingtocarry@gmail.com",
+                  "internal_author_name": "Raj Arya",
+                  "internal_toggles": {
+                    "config_scale_value": 10
+                  },
+                  "internal_formulas": {
+                    "config_scale_value": "100"
+                  },
+                  "internal_readonly": "03cgfhPABVNqNE9T1wb0B3YgSlmem0afQKo7Fmdcz8Rz5-6psXf5zynVhigNSar8jT5KhNJRuTMewBvrmZq0k3VOczX2m_Ay8QX7V0pyQqf2s9EeiVxZG9xTxbdI8uiOplfRY-G9w7AFyPe4OX-NWRdsKdb6UofCHqrgtNAs_iySljcwnCBRt_PgqWSCaOf2xS8VkNb
+
+
