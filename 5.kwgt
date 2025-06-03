@@ -1,0 +1,213 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "viewgroup_items": [
+        {
+          "internal_toggles": {
+            "config_alpha": 100
+          },
+          "internal_globals": {
+            "config_alpha": "opaque"
+          },
+          "internal_type": "OverlapLayerModule",
+          "viewgroup_items": [
+            {
+              "internal_type": "ShapeModule",
+              "shape_type": "RECT",
+              "shape_width": 610.0,
+              "shape_height": 180.0,
+              "shape_corners": 50.0
+            }
+          ]
+        },
+        {
+          "internal_type": "StackLayerModule",
+          "config_stacking": "HORIZONTAL_CENTER",
+          "config_margin": 20.0,
+          "config_scale_value": 90.0,
+          "viewgroup_items": [
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_APP",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;component\u003dcom.samsung.android.dialer/.DialtactsActivity;S.org.kustom.intent.label\u003dPhone;end"
+                }
+              ],
+              "viewgroup_items": [
+                {
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "iconbg"
+                  },
+                  "internal_type": "ShapeModule",
+                  "shape_width": 140.0,
+                  "shape_corners": 30.0
+                },
+                {
+                  "internal_type": "BitmapModule",
+                  "internal_toggles": {
+                    "bitmap_bitmap": 100
+                  },
+                  "internal_globals": {
+                    "bitmap_bitmap": "ico1"
+                  },
+                  "bitmap_bitmap": "kfile://org.kustom.provider/bitmaps/IMGd3c3b35d230ed3934b3062b4b5bb85b3"
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_APP",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;component\u003dcom.samsung.android.messaging/com.android.mms.ui.ConversationComposer;S.org.kustom.intent.label\u003dMessages;end"
+                }
+              ],
+              "viewgroup_items": [
+                {
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "iconbg"
+                  },
+                  "internal_type": "ShapeModule",
+                  "shape_width": 140.0,
+                  "shape_corners": 30.0
+                },
+                {
+                  "internal_type": "BitmapModule",
+                  "bitmap_bitmap": "kfile://org.kustom.provider/bitmaps/IMG93857d7dbbe2aae0eaaa8405a71caf23",
+                  "internal_toggles": {
+                    "bitmap_bitmap": 100
+                  },
+                  "internal_globals": {
+                    "bitmap_bitmap": "ico2"
+                  }
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_APP",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;component\u003dcom.sec.android.app.camera/.Camera;S.org.kustom.intent.label\u003dCamera;end"
+                }
+              ],
+              "viewgroup_items": [
+                {
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "iconbg"
+                  },
+                  "internal_type": "ShapeModule",
+                  "shape_width": 140.0,
+                  "shape_corners": 30.0
+                },
+                {
+                  "internal_type": "BitmapModule",
+                  "bitmap_bitmap": "kfile://org.kustom.provider/bitmaps/IMGe9ee1da6d3ad4cd8df72187a060e4ba9",
+                  "internal_toggles": {
+                    "bitmap_bitmap": 100
+                  },
+                  "internal_globals": {
+                    "bitmap_bitmap": "ico3"
+                  }
+                }
+              ]
+            },
+            {
+              "internal_type": "OverlapLayerModule",
+              "internal_events": [
+                {
+                  "type": "SINGLE_TAP",
+                  "action": "LAUNCH_APP",
+                  "intent": "intent:#Intent;action\u003dandroid.intent.action.MAIN;category\u003dandroid.intent.category.LAUNCHER;component\u003dcom.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity;S.org.kustom.intent.label\u003dGallery;end"
+                }
+              ],
+              "viewgroup_items": [
+                {
+                  "internal_toggles": {
+                    "paint_color": 100
+                  },
+                  "internal_globals": {
+                    "paint_color": "iconbg"
+                  },
+                  "internal_type": "ShapeModule",
+                  "shape_width": 140.0,
+                  "shape_corners": 30.0
+                },
+                {
+                  "internal_type": "BitmapModule",
+                  "bitmap_bitmap": "kfile://org.kustom.provider/bitmaps/IMG707909c763b62491e7ac11c7c00fb6d7",
+                  "internal_toggles": {
+                    "bitmap_bitmap": 100
+                  },
+                  "internal_globals": {
+                    "bitmap_bitmap": "ico4"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##
+
+
+
+
+
+
+
+
+
+
+
+
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "KomponentModule",
+      "internal_title": "Hole Clock",
+      "internal_author_name": "Raj Arya",
+      "internal_author_email": "keepingtocarry@gmail.com",
+      "globals_list": {
+        "c1": {
+          "index": 1,
+          "type": "COLOR",
+          "title": "c1",
+          "value": "#FFFFFFFF"
+        },
+        "c2": {
+          "index": 2,
+          "type": "COLOR",
+          "title": "c2",
+          "value": "#FFF93535"
+        }
+      },
+      "internal_readonly": "03cgfhPABVNqNE9T1wb0By9ii9NzRx-IUqRWmex6c162yOdpxR8KjFLaJKFO2O1dNY_ggmNe5apcfEyJ8OO6qe05_OLN645OFZHChtH77H3MF5yTfUv8ceF0BNrmAmmCLOTLVu8WRub2AgIOHwOuF8dxKU-SpikkOUUQYY1IivAXbwTDxY1Ty6BNL-6x9JJqz5ckinakw9FqNE9T1wb0B3YgSlmem0afQKo7Fmdcz8Rz5-6psXf5zw6QQ6qGyzhOTHOA9GcKT1ZljsRFtFBVXXLobvxHQvUuoCpZArn1_adO1CctSOzLjMoWRKMWGvuKrqDQzLLJD1Jd7LYy1pBpUStu2IQ_2Bn6wK-ApdieKXkI0KWFKahwP--jgKdOj84mqompM7SgH9LGi1mxZXwwDeH9W1oJcscIkI0n4ZX3LwXkdJUoFT32mNucbIlx4SezQeMhZ8g6UN_-6-74_vR4sIuVQXaZwFbmxvDvut_wj334P3XAeP-tpLuh4ujFGt8b61RkOkuiF8lfJkvRnp5l3Gx8AevznvVWfhyRohZ_m-yMrKsqcVGrekCdqptyXfPJWNHnap6XdLpdfSok0Y9DbOiV6lOMz2MwLjK3xZ168Adkd2jaiOHptducbIlx4SezJtnKUzweVJg8vqk4Ayf7RHQ13rdBYhT4-hnHq5S0QN4WLBfDy14p52H9-LLPOZbjidWIN9cEWZtLEWZqQejRgVGzGLIx46eoCZQorfllHtAXbCnW-lKHwlmAJ5LFGSlc_gCYg6Pt0d4pjynyE8wAJiO8z22-8tjPWKvRg0sPxpcp51-1mUMvP1LaJKFO2O1dAu-rPlcYQUdsi0DNNWPfsE5O9XFlo-bEi5VBdpnAVubG9mx0OGT2Cs6PG_LlIS-e-vg-H1HlDA5nqFufAMhFfd9ZD2QEFeQRPAQl43Hdyhxd7LYy1pBpUStu2IQ_2Bn6wK-ApdieKXkI0KWFKahwP--jgKdOj84mqompM7SgH9LGi1mxZXwwDeH9W1oJcscIpKcieGQVFoaYXu3gB5LW1inVhigNSar8IcI3ixgLzm3ngwH948YBeX8mvGN2puuec4XsEomr91rRnunUkdzAu9p-jCoLXiaTIYTT2HaTem6ulDLu2P7y79Nb36OZQBbY4mptKOHOVKdCD7OX_GOodxqyV8r73bAtYf34ss85luONEedO7XlCZg\u003d\u003d"
+    }
+  ]
+}
+##KUSTOMCLIP##
+
