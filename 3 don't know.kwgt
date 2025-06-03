@@ -1,0 +1,271 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "OverlapLayerModule",
+      "viewgroup_items": [
+        {
+          "internal_type": "ShapeModule",
+          "shape_width": 290.0,
+          "shape_height": 280.0,
+          "shape_corners": 40.0,
+          "paint_color": "#BFFFFFFF",
+          "fx_shadow_color": "#19000000",
+          "fx_shadow_direction": 306.0,
+          "fx_shadow_distance": 5.0,
+          "internal_toggles": {
+            "paint_color": 100,
+            "fx_gradient_color": 100
+          },
+          "internal_formulas": {
+            "paint_color": "$ce(ce(si(wpcolor1), sat,35),alpha,50)$"
+          },
+          "fx_shadow_blur": 60.0,
+          "fx_gradient_offset_y": 0,
+          "fx_gradient_offset_x": 0,
+          "fx_gradient_color": "#00000000",
+          "fx_gradient_offset": 60.0,
+          "fx_gradient_width": 95,
+          "internal_globals": {
+            "paint_color": "c1",
+            "fx_gradient_color": "grad"
+          },
+          "position_anchor": "BOTTOM"
+        },
+        {
+          "internal_type": "StackLayerModule",
+          "position_padding_bottom": 150.0,
+          "position_anchor": "CENTERLEFT",
+          "position_padding_left": 30.0,
+          "viewgroup_items": [
+            {
+              "internal_toggles": {
+                "paint_color": 100
+              },
+              "internal_globals": {
+                "paint_color": "text"
+              },
+              "internal_type": "TextModule",
+              "text_size": 23.0,
+              "text_family": "kfile://org.kustom.provider/fonts/FontsFree-Net-SFProDisplay-Light.ttf",
+              "text_expression": "$li(loc)$, $li(country)$"
+            },
+            {
+              "internal_type": "TextModule",
+              "text_size": 55.0,
+              "text_family": "kfile://org.kustom.provider/fonts/FontsFree-Net-SFProDisplay-Light.ttf",
+              "text_expression": "$wi(temp)$°",
+              "internal_toggles": {
+                "paint_color": 100
+              },
+              "internal_globals": {
+                "paint_color": "text"
+              }
+            }
+          ]
+        },
+        {
+          "internal_type": "KomponentModule",
+          "internal_title": "Weather Iconglass 1x1 block",
+          "internal_author_name": "Alfonso Pérez",
+          "globals_list": {
+            "icon": {
+              "index": 1,
+              "type": "LIST",
+              "title": "Icon",
+              "value": "$wi(icon)$",
+              "entries": "\"$wi(icon)$\"##Current,\"$wf(icon, 0)$\"##Today Forecast,\"$wf(icon, 1)$\"##Tomorrow Forecast,\"$wf(icon, 2)$\"##2 Days Forecast,\"$wf(icon, 3)$\"##3 Days Forecast,\"$wf(icon, 4)$\"##4 Days Forecast,\"$wf(icon, 5)$\"##5 Days Forecast,\"$wf(icon, 6)$\"##6 Days Forecast,\"$wf(icon, 7)$\"##7 Days Forecast,\"$wf(icon, 8)$\"##8 Days Forecast,\"$wf(icon, 9)$\"##9 Days Forecast"
+            },
+            "nightico": {
+              "index": 2,
+              "type": "SWITCH",
+              "title": "NightIco",
+              "value": "1"
+            },
+            "opacity": {
+              "index": 3,
+              "type": "NUMBER",
+              "title": "Opacity",
+              "value": "100.0",
+              "min": 0,
+              "max": 100
+            },
+            "size": {
+              "index": 4,
+              "type": "NUMBER",
+              "title": "Size",
+              "value": 160.0,
+              "min": 10,
+              "max": 720
+            },
+            "rotate": {
+              "index": 5,
+              "type": "NUMBER",
+              "title": "Rotate",
+              "min": 0,
+              "max": 359
+            },
+            "clear-day": {
+              "index": 6,
+              "type": "BITMAP",
+              "title": "clear-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG9d8041b9e273aa39ab6388bff1012817"
+            },
+            "clear-night": {
+              "index": 7,
+              "type": "BITMAP",
+              "title": "clear-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG9add45f240b9baddaa07d38e7c843828"
+            },
+            "fog-day": {
+              "index": 8,
+              "type": "BITMAP",
+              "title": "fog-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG6493ebf3d4ad1e29791f537fc5fe37c4"
+            },
+            "fog-night": {
+              "index": 9,
+              "type": "BITMAP",
+              "title": "fog-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGf674b00f5cb48faf78c3d389526f3d7e"
+            },
+            "hail-day": {
+              "index": 10,
+              "type": "BITMAP",
+              "title": "hail-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGaa0a4ac6358abefafb629984c6cf6db4"
+            },
+            "hail-night": {
+              "index": 11,
+              "type": "BITMAP",
+              "title": "hail-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGfed98424d7e4b95991710f3ecf9ec2af"
+            },
+            "lsnow-day": {
+              "index": 12,
+              "type": "BITMAP",
+              "title": "lsnow-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGe5ef1320df54ecb031b6253f4e5b7bd4"
+            },
+            "lsnow-night": {
+              "index": 13,
+              "type": "BITMAP",
+              "title": "lsnow-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG104785a7fc285f532ebf89f2b67bf308"
+            },
+            "mcloudy": {
+              "index": 14,
+              "type": "BITMAP",
+              "title": "mcloudy",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG8493e0607f1ec4dbd453b9249574573b"
+            },
+            "pcloudy-day": {
+              "index": 15,
+              "type": "BITMAP",
+              "title": "pcloudy-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG28c450fd5b14063df668179cf1ffda7e"
+            },
+            "pcloudy-night": {
+              "index": 16,
+              "type": "BITMAP",
+              "title": "pcloudy-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG11ab33a4f55e1a9a5480d9f1b28c02c3"
+            },
+            "rain": {
+              "index": 17,
+              "type": "BITMAP",
+              "title": "rain",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG382d1f39c12688c3f264a0fa6e125c35"
+            },
+            "showers-day": {
+              "index": 18,
+              "type": "BITMAP",
+              "title": "showers-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG9f9f5d9d983ad19061b244a1f69489fe"
+            },
+            "showers-night": {
+              "index": 19,
+              "type": "BITMAP",
+              "title": "showers-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGb3b3db569c79972755d4fa92a7d3910c"
+            },
+            "sleet-day": {
+              "index": 20,
+              "type": "BITMAP",
+              "title": "sleet-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG852b1bba676fe994be839db41b1331dc"
+            },
+            "sleet-night": {
+              "index": 21,
+              "type": "BITMAP",
+              "title": "sleet-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGccd46860df3fc08cbdf4296b402f429d"
+            },
+            "snow-day": {
+              "index": 22,
+              "type": "BITMAP",
+              "title": "snow-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGc69bef88fc2b39dafef824f4895137bb"
+            },
+            "snow-night": {
+              "index": 23,
+              "type": "BITMAP",
+              "title": "snow-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG339a63c7f0395616d85f9c20df39c710"
+            },
+            "tornado": {
+              "index": 24,
+              "type": "BITMAP",
+              "title": "tornado",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGce6689ab2b0c1d215da01598cfe40fe"
+            },
+            "tshower-day": {
+              "index": 25,
+              "type": "BITMAP",
+              "title": "tshower-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG749fb5ac1c3252995350e8a8dee722ce"
+            },
+            "tshower-night": {
+              "index": 26,
+              "type": "BITMAP",
+              "title": "tshower-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGba33bca7e47b12709cc9b4f53cb71de7"
+            },
+            "tstorm": {
+              "index": 27,
+              "type": "BITMAP",
+              "title": "tstorm",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGd5c8f6ec71090ebfdf382d2de88c1f99"
+            },
+            "unknown": {
+              "index": 28,
+              "type": "BITMAP",
+              "title": "unknown",
+              "value": "kfile://org.kustom.provider/bitmaps/IMGa286033a8115d70b0652ca8a89cea159"
+            },
+            "windy-day": {
+              "index": 29,
+              "type": "BITMAP",
+              "title": "windy-day",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG6dc756691dc711020e6e4f18cb0c2389"
+            },
+            "windy-night": {
+              "index": 30,
+              "type": "BITMAP",
+              "title": "windy-night",
+              "value": "kfile://org.kustom.provider/bitmaps/IMG746cb99e47082ba122acee055b81e53d"
+            }
+          },
+          "internal_author_email": "alfoprz20@gmail.com",
+          "position_padding_bottom": 15.0,
+          "position_anchor": "BOTTOMRIGHT",
+          "position_padding_right": 15.0,
+          "internal_readonly": "_ufhQtq0GuNJhVkkoc5w-gbmgQBpH4LamC8DYxSuHglMHVnyb1vzTEfKFOTNB9uh17CTtR9o6Qw8Y6q1RL3Ygb-Das3evQED3CF5wIU6eal7jrI6323L52HBGdyWhEmqXVkl2490p_euMvuLFJEa7QG7flDNgxMG-0IXTvxNb2QRp2zByX53-pbmJ2iTCUMZIr8bCfPeGlqt-7Vcsf2zpT9rHG6guWh9agHxQM-gPOWknq9O89PUzZzvjy6js61DlkS0OEVhcME2N8sB4HBE_YQIZ28HpD4R7QZ1lta6slMQemz5m0za4NWDxzN492Subf9kBEWo-cQ4drSz3_Kl3ZaEOuKrZUCPJMhH06BHq1jBirSCSFFawIUxTtduiWJq4lzpxfpuDwg9ewTg99hGC8MYf8PCCUhQ7A1UzWtCYITASRDScHE8umjp5oU3EFZmEdFDdR09mM8ahH4URcyVAuWdmRfqga_cjiSdUy7zERaFb2e8ZIqd6v3k7ojZ7BXLFlRG0x-t84LGCaXmrf6q5GedcGKlo2scTd96nLdtgD4FiYgV31ZTE5aEOuKrZUCPJMhH06BHq1jBirSCSFFawIUxTtduiWJqxbvHgwfaulCD1wC2ZFtt7Ghb7xWVXtlMWJCoFh6xhIAel-LgyNrW5C5gE5Apnx4eHDE414EFzxyknq9O89PUzZzvjy6js61DlkS0OEVhcMHT_av9so1BB4PXALZkW23sdAnpdcp1fm3ca-dflKJLyOKxBoOw8IkUZB_ZVnW5k5WWhDriq2VAjyTIR9OgR6tYwYq0gkhRWsCFMU7Xboliaugv4wlCFd37NMGCXed0JLMWVO0GPD4fd2edcGKlo2scTd96nLdtgD4xr89MPiL5wRqEfhRFzJUC5Z2ZF-qBr9yOJJ1TLvMRFoVvZ7xkip3qGOR4iFekrrNdWxbyTU3wjeI2eNXnR9U4EGP_9LABUr5J3-NyKwjNXCpTXB9hbDcB3rbLS_dRHM__FrB5rGZDF22ne5plaGgimO-3njXVubcGmLZQU6o6xF1bFvJNTfCNBqffi7Omw5nASRDScHE8umjp5oU3EFZm3awxsq8q2XiWhDriq2VAjyTIR9OgR6tYwYq0gkhRWsCFMU7Xboliasg-lZnS2vlzh7rvVp9MJANc82MFUJI2_gUZRGWvDA2awEkQ0nBxPLpo6eaFNxBWZslgJWDKyg9AGoR-FEXMlQLlnZkX6oGv3I4knVMu8xEWhW9nvGSKneoVY-uYY-dZjVFS6rx_0dYlVWEZnvneb7BnnXBipaNrHB9OFHuqVP8L-Vqj-T4TDBnR9ti2t02ncVU5ugDJiTdCqnoiYR3L9J7Pjd3FTELCr2sp_Glc2FRp2EhrXU4aOcWDVn1Zd54mSpo1pwC2EJptMSVSWMtyWExcxIMtjyjR1w\u003d\u003d"
+        }
+      ]
+    }
+  ]
+}
+##KUSTOMCLIP##
