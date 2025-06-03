@@ -1,0 +1,29 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "KomponentModule",
+      "internal_title": "Hole Clock",
+      "internal_author_name": "Raj Arya",
+      "internal_author_email": "keepingtocarry@gmail.com",
+      "globals_list": {
+        "c1": {
+          "index": 1,
+          "type": "COLOR",
+          "title": "c1",
+          "value": "#FFFFFFFF"
+        },
+        "c2": {
+          "index": 2,
+          "type": "COLOR",
+          "title": "c2",
+          "value": "#FFF93535"
+        }
+      },
+      "internal_readonly": "03cgfhPABVNqNE9T1wb0By9ii9NzRx-IUqRWmex6c162yOdpxR8KjFLaJKFO2O1dNY_ggmNe5apcfEyJ8OO6qe05_OLN645OFZHChtH77H3MF5yTfUv8ceF0BNrmAmmCLOTLVu8WRub2AgIOHwOuF8dxKU-SpikkOUUQYY1IivAXbwTDxY1Ty6BNL-6x9JJqz5ckinakw9FqNE9T1wb0B3YgSlmem0afQKo7Fmdcz8Rz5-6psXf5zw6QQ6qGyzhOTHOA9GcKT1ZljsRFtFBVXXLobvxHQvUuoCpZArn1_adO1CctSOzLjMoWRKMWGvuKrqDQzLLJD1Jd7LYy1pBpUStu2IQ_2Bn6wK-ApdieKXkI0KWFKahwP--jgKdOj84mqompM7SgH9LGi1mxZXwwDeH9W1oJcscIkI0n4ZX3LwXkdJUoFT32mNucbIlx4SezQeMhZ8g6UN_-6-74_vR4sIuVQXaZwFbmxvDvut_wj334P3XAeP-tpLuh4ujFGt8b61RkOkuiF8lfJkvRnp5l3Gx8AevznvVWfhyRohZ_m-yMrKsqcVGrekCdqptyXfPJWNHnap6XdLpdfSok0Y9DbOiV6lOMz2MwLjK3xZ168Adkd2jaiOHptducbIlx4SezJtnKUzweVJg8vqk4Ayf7RHQ13rdBYhT4-hnHq5S0QN4WLBfDy14p52H9-LLPOZbjidWIN9cEWZtLEWZqQejRgVGzGLIx46eoCZQorfllHtAXbCnW-lKHwlmAJ5LFGSlc_gCYg6Pt0d4pjynyE8wAJiO8z22-8tjPWKvRg0sPxpcp51-1mUMvP1LaJKFO2O1dAu-rPlcYQUdsi0DNNWPfsE5O9XFlo-bEi5VBdpnAVubG9mx0OGT2Cs6PG_LlIS-e-vg-H1HlDA5nqFufAMhFfd9ZD2QEFeQRPAQl43Hdyhxd7LYy1pBpUStu2IQ_2Bn6wK-ApdieKXkI0KWFKahwP--jgKdOj84mqompM7SgH9LGi1mxZXwwDeH9W1oJcscIpKcieGQVFoaYXu3gB5LW1inVhigNSar8IcI3ixgLzm3ngwH948YBeX8mvGN2puuec4XsEomr91rRnunUkdzAu9p-jCoLXiaTIYTT2HaTem6ulDLu2P7y79Nb36OZQBbY4mptKOHOVKdCD7OX_GOodxqyV8r73bAtYf34ss85luONEedO7XlCZg\u003d\u003d"
+    }
+  ]
+}
+##KUSTOMCLIP##
